@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #29382e;
+    padding: 35px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 200px 140px 175px;
+    gap: 15px;
+}
+
+.box {
+    padding: 22px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* top left */
+
+.plan {
+    background: #dce8d5;
+}
+
+.plan h2 {
+    font-size: 27px;
+    line-height: 1.05;
+}
+
+.plan b {
+    color: #55764c;
+}
+
+button {
+    margin-top: 18px;
+    padding: 9px 17px;
+    border: none;
+    border-radius: 20px;
+    background: #55764c;
+    color: white;
+}
+
+/* big box */
+
+.main {
+    background: #78966d;
+    color: white;
+    text-align: center;
+    padding-top: 38px;
+}
+
+.main h1 {
+    font-size: 34px;
+    line-height: 1.05;
+}
+
+.main p {
+    margin: 13px 0;
+}
+
+.stars {
+    color: #f5cf62;
+    margin-bottom: 8px;
+}
+
+/* right tall box */
+
+.schedule {
+    background: #e7dece;
+    grid-row: span 2;
+}
+
+.schedule h2 {
+    font-size: 26px;
+    line-height: 1.05;
+}
+
+.schedule h4 {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.bar {
+    display: inline-block;
+    width: 17px;
+    background: #78966d;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.one {
+    height: 30px;
+}
+
+.two {
+    height: 50px;
+}
+
+.three {
+    height: 75px;
+}
+
+.four {
+    height: 45px;
+}
+
+.schedule p {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* middle left */
+
+.improve {
+    background: #f0dfbd;
+}
+
+.improve h2 {
+    font-size: 25px;
+    line-height: 1.05;
+}
+
+/* middle */
+
+.subjects {
+    background: #e3eee0;
+}
+
+.subjects h3 {
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+.subjects p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* middle right */
+
+.routine {
+    background: #d3e2cd;
+}
+
+.routine h2 {
+    font-size: 21px;
+    line-height: 1.1;
+}
+
+.progress {
+    height: 10px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.progress div {
+    width: 70%;
+    height: 100%;
+    background: #55764c;
+    border-radius: 10px;
+}
+
+.routine small {
+    display: block;
+    margin-top: 7px;
+}
+
+/* bottom left */
+
+.progress-box {
+    background: #cedbc5;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.progress-box h1 {
+    font-size: 48px;
+    color: #55764c;
+}
+
+.progress-box p {
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+/* bottom wide */
+
+.goals {
+    grid-column: 2 / 4;
+    background: #78966d;
+    color: white;
+}
+
+.goals h2 {
+    font-size: 26px;
+    line-height: 1.05;
+    margin-bottom: 13px;
+}
+
+.goal {
+    display: inline-block;
+    width: 28%;
+    padding: 10px;
+    margin-right: 7px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 9px;
+}
+
+.goal h3 {
+    font-size: 14px;
+}
+
+.goal p {
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+
+/* mobile */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .schedule {
+        grid-row: auto;
+    }
+
+    .goals {
+        grid-column: auto;
+    }
+
+    .box {
+        min-height: 180px;
+    }
+
+    .main {
+        min-height: 220px;
+    }
+
+    .goal {
+        width: 29%;
+    }
+}
